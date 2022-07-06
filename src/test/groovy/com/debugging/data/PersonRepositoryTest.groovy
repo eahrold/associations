@@ -83,7 +83,7 @@ class PersonRepositoryTest extends IntegrationTestSpecification {
 
         // Add The Predicate
         savedPerson.names.each {
-            if(it.name === 'jack') action.discard.add(it)
+            if(it.name == 'jack') action.discard.add(it)
             else action.keep.add(it)
         }
 
